@@ -22,14 +22,14 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Judy",
+                "Chris",
                 1000,
-                "Web Developer",
+                "Software Engineer",
                 1000,
-                "Mobile Developer",
+                "Full-Stack Developer",
                 1000,
-                "UI/UX Designer",
-                1000,
+                // "Founding Engineer",
+                // 1000,
               ]}
               wrapper="span"
               speed={50}
