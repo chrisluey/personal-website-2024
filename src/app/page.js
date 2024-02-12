@@ -8,9 +8,11 @@ import AchievementsSection from "./components/AchievementsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212]">
+    // background-color here
+    // <main className="flex min-h-screen flex-col bg-[#121212]">
+    <main className="flex min-h-screen flex-col bg-gradient-to-br from-blue-500 to-purple-500">
       <Navbar />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <div className="container flex-grow mx-auto px-12 py-4">
         <HeroSection />
         {/* <AchievementsSection /> */}
         <AboutSection />
