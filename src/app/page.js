@@ -12,7 +12,7 @@ export default function Home() {
     // <main className="flex min-h-screen flex-col bg-[#121212]">
     <main className="flex min-h-screen flex-col bg-gradient-to-br from-blue-500 to-purple-500">
       <Navbar />
-      <div className="container flex-grow mx-auto px-12 py-4">
+      <div className="container mx-auto px-12 py-4 justify-center" >
         <HeroSection />
         {/* <AchievementsSection /> */}
         <AboutSection />

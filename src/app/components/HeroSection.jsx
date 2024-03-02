@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const HeroSection = () => {
   return (
-    <section className="lg:py-16">
+    <section className="lg:py-16 flex items-center justify-center h-screen">
       <div className="grid grid-cols-1 sm:grid-cols-13">
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
@@ -22,23 +22,23 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                "Chris",
+                "Christopher Luey",
                 1000,
                 "a Software Engineer",
                 1000,
                 "a Full-Stack Developer",
                 1000,
-                // "Founding Engineer",
-                // 1000,
+                "a Tech Enthusiast",
+                1000,
               ]}
               wrapper="span"
               speed={50}
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
-            voluptuous.
+          <p className="text-[#ECEFF4] text-base sm:text-lg mb-6 lg:text-xl">
+            Welcome to my website!
+            Feel free to navigate and learn more about my projects, skills, and journey in the world of software development!
           </p>
           <div>
             <Link
