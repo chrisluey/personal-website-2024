@@ -7,25 +7,25 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
-    image: "/images/projects/7.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    title: "Trans Name Generator",
+    description: "JavaScript mobile app that suggests names for people transitioning given the phonetic spelling of their previous name",
+    image: "/images/projects/1.png",
+    tag: ["All", "Mobile"],
+    gitUrl: "https://github.com/ahon54/Name-Generator",
     previewUrl: "/",
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Avoid The Virus",
+    description: "2D platformer/turn-based RPG hybrid single-player video game using native C++ and OpenGL",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["All"],
+    gitUrl: "https://github.com/chrisluey/avoid-the-virus",
     previewUrl: "/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
+    title: "Discord Bots For Fun",
     description: "Project 3 description",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
@@ -84,7 +84,7 @@ const ProjectsSection = () => {
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
-      {/* <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
+      <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag
           onClick={handleTagChange}
           name="All"
@@ -100,7 +100,7 @@ const ProjectsSection = () => {
           name="Mobile"
           isSelected={tag === "Mobile"}
         />
-      </div> */}
+      </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
           <motion.li
