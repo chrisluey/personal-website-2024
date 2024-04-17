@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Languages",
     id: "languages",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 grid grid-cols-3">
         <li>Java</li>
         <li>JavaScript</li>
         <li>Python</li>
@@ -27,7 +27,7 @@ const TAB_DATA = [
     title: "Frameworks",
     id: "frameworks",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 grid grid-cols-2">
         <li>React.js</li>
         <li>Node.js</li>
         <li>JUnit</li>
@@ -42,7 +42,7 @@ const TAB_DATA = [
     title: "Developer Tools",
     id: "developer_tools",
     content: (
-      <ul className="list-disc pl-2">
+      <ul className="list-disc pl-2 grid grid-cols-2">
         <li>Git</li>
         <li>Google Cloud Platform</li>
         <li>VS Code</li>
@@ -95,7 +95,7 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white flex items-center justify-center h-screen" id="about">
+    <section className="text-white flex items-center justify-center h-screen lg:py-16" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
         <Image class="rounded-md" src="/images/stock-software-dev.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">

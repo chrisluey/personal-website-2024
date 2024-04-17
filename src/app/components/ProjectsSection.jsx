@@ -26,39 +26,39 @@ const projectsData = [
   {
     id: 3,
     title: "Discord Bots For Fun",
-    description: "Project 3 description",
+    description: "Discord bots that could send text messages in servers and play/pause audio in voice channels",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/chrisluey/discord-bots-for-fun",
     previewUrl: "/",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "Portgrid",
+    description: "Vue.js social network platform web app for developers wanting to share personal projects or look for collaborators",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
+    gitUrl: "https://github.com/chrisluey/portgrid",
     previewUrl: "/",
   },
-  {
-    id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
-  },
+  // {
+  //   id: 5,
+  //   title: "React Firebase Template",
+  //   description: "Authentication and CRUD operations",
+  //   image: "/images/projects/5.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
+  // {
+  //   id: 6,
+  //   title: "Full-stack Roadmap",
+  //   description: "Project 5 description",
+  //   image: "/images/projects/6.png",
+  //   tag: ["All", "Web"],
+  //   gitUrl: "/",
+  //   previewUrl: "/",
+  // },
 ];
 
 const ProjectsSection = () => {
@@ -80,7 +80,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="flex flex-col items-center justify-center h-screen">
+    <section id="projects" className="flex flex-col items-center justify-center h-screen lg:py-16">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
         My Projects
       </h2>
@@ -101,7 +101,7 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12 justify-center">
         {filteredProjects.map((project, index) => (
           <motion.li
             key={index}
