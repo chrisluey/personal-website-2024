@@ -133,7 +133,7 @@ const AboutSection = () => {
               active={tab === "developer_tools"}
             >
               {" "}
-              Developer Tools{" "}
+              Dev Tools{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("libraries")}
