@@ -97,14 +97,14 @@ const AboutSection = () => {
   return (
     <section className="text-white flex items-center justify-center h-screen lg:py-16" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image class="rounded-md" src="/images/stock-software-dev.png" width={500} height={500} />
+        <Image class="rounded-md" src="/images/stock-software-dev.png" width={500} height={500} alt=""/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-          Welcome! I'm Christopher Luey, a software engineer with a passion for creating innovative solutions.
-          With extensive job experience in full-stack development, I enjoy tackling complex problems and collaborating with diverse teams.
-          I'm driven by a curiosity to explore new technologies and a commitment to continuous learning.
-          Feel free to explore my projects and connect with me if you'd like to collaborate or learn more about my work.
+            Welcome! I&apos;m Christopher Luey, a software engineer with a passion for creating innovative solutions.
+            With extensive job experience in full-stack development, I enjoy tackling complex problems and collaborating with diverse teams.
+            I&apos;m driven by a curiosity to explore new technologies and a commitment to continuous learning.
+            Feel free to explore my projects and connect with me if you&apos;d like to collaborate or learn more about my work.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
