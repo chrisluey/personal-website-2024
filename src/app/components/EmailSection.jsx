@@ -65,7 +65,7 @@ const EmailSection = () => {
           </Link>
         </div>
         <p className="text-gray-300 max-w-3xl text-3xl my-8 mx-auto">
-          If you would like to contact via e-mail, I'm available at christopherluey@gmail.com
+          If you would like to contact via e-mail, I&apos;m available at christopherluey@gmail.com
         </p>
       </div>
       {/* <div>
