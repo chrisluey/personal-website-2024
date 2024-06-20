@@ -12,6 +12,7 @@ This is my personal website built with Next.js and Tailwind CSS. It is meant to 
 
 1. Start the development server: `npm run dev`
 2. Open your browser and visit `http://localhost:3000` to view the website.
+3. The website is also hosted on 'http://chrisluey.vercel.app/
 
 ## Dependencies
 
