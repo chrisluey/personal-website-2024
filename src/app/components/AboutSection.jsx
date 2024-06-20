@@ -95,9 +95,9 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white flex items-center justify-center h-screen lg:py-16" id="about">
+    <section className="text-white flex flex-col items-center justify-center min-h-screen lg:py-16" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image class="rounded-md" src="/images/stock-software-dev.png" width={500} height={500} alt=""/>
+        <Image className="rounded-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto sm:h-64 md:h-72 lg:h-80 xl:h-96 object-contain" src="/images/stock-software-dev.png" width={500} height={500} alt=""/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
@@ -156,6 +156,7 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
+
   );
 };
 
