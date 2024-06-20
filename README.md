@@ -5,7 +5,7 @@ This is a portfolio website built with Next.js and Tailwind CSS. It showcases yo
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/chrisluey/personal-website-2024`
-2. Navigate to the project directory: `cd portfolio-website`
+2. Navigate to the project directory: `cd personal-website-2024`
 3. Install the dependencies: `npm install`
 
 ## Usage
