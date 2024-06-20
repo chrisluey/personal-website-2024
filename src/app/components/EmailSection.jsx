@@ -57,9 +57,11 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2 justify-center my-8">
-          <Link href={GITHUB_LINK}>
-            <Image src={GithubIcon} alt="Github Icon" />
-          </Link>
+          <a href={GITHUB_LINK} target="_blank" rel="noopener noreferrer">
+            <Link href={GITHUB_LINK}>
+              <Image src={GithubIcon} alt="Github Icon" />
+            </Link>
+          </a>
           <Link href={LINKEDIN_LINK}>
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
