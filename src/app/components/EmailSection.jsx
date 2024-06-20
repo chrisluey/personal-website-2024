@@ -40,6 +40,9 @@ const EmailSection = () => {
     }
   };
 
+  const t1 = new Date().getTime();
+  const t2 = new Date().getTime() + 1;
+
   return (
     <section
       id="contact"
@@ -57,12 +60,12 @@ const EmailSection = () => {
           try my best to get back to you!
         </p>
         <div className="socials flex flex-row gap-2 justify-center my-8">
-          <a href={GITHUB_LINK} target="_blank" rel="noopener noreferrer">
-            <Link href={GITHUB_LINK}>
+          {/* <a href={GITHUB_LINK} target="_blank" rel="noopener noreferrer"> */}
+            <Link href={GITHUB_LINK} key={t1}>
               <Image src={GithubIcon} alt="Github Icon" />
             </Link>
-          </a>
-          <Link href={LINKEDIN_LINK}>
+          {/* </a> */}
+          <Link href={LINKEDIN_LINK} key={t2}>
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
