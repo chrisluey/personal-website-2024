@@ -1,6 +1,6 @@
-# Portfolio Website
+# Personal Website 2024
 
-This is a portfolio website built with Next.js and Tailwind CSS. It showcases your skills, projects, and achievements in an elegant and responsive design!
+This is my personal website built with Next.js and Tailwind CSS. It is meant to show a bit of my skills, projects, contact info, and who I am as a software developer!
 
 ## Installation
 
