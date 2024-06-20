@@ -43,20 +43,20 @@ const EmailSection = () => {
   return (
     <section
       id="contact"
-      className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative flex items-center justify-center h-screen"
+      className="grid my-12 md:my-12 py-24 gap-4 relative flex items-center h-screen"
     >
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-      <div className="z-10">
-        <h5 className="text-xl font-bold text-white my-2">
+      <div className="z-10 mx-auto">
+        <h2 className="text-center text-4xl font-bold text-white my-8">
           Let&apos;s Connect
-        </h5>
-        <p className="text-gray-300 mb-4 max-w-md">
+        </h2>
+        <p className="text-gray-300 max-w-3xl text-3xl my-8 mx-auto">
           {" "}
           I&apos;m currently looking for new opportunities, my inbox is always
           open. Whether you have a question or just want to say hi, I&apos;ll
           try my best to get back to you!
         </p>
-        <div className="socials flex flex-row gap-2">
+        <div className="socials flex flex-row gap-2 justify-center my-8">
           <Link href={GITHUB_LINK}>
             <Image src={GithubIcon} alt="Github Icon" />
           </Link>
@@ -64,8 +64,11 @@ const EmailSection = () => {
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
+        <p className="text-gray-300 max-w-3xl text-3xl my-8 mx-auto">
+          If you would like to contact via e-mail, I'm available at christopherluey@gmail.com
+        </p>
       </div>
-      <div>
+      {/* <div>
         {emailSubmitted ? (
           <p className="text-green-500 text-sm mt-2">
             Email sent successfully!
@@ -126,7 +129,7 @@ const EmailSection = () => {
             </button>
           </form>
         )}
-      </div>
+      </div> */}
     </section>
   );
 };
