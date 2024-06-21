@@ -29,6 +29,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleBeforeUnload = () => {
+      console.log("test");
       window.location.reload();
     };
 
