@@ -61,9 +61,12 @@ const EmailSection = () => {
         </p>
         <div className="socials flex flex-row gap-2 justify-center my-8">
           {/* <a href={GITHUB_LINK} target="_blank" rel="noopener noreferrer"> */}
-            <Link href={GITHUB_LINK} key={t1} prefetch={false}>
+            {/* <Link href={GITHUB_LINK} key={t1} prefetch={false}>
               <Image src={GithubIcon} alt="Github Icon" />
-            </Link>
+            </Link> */}
+            <a href={GITHUB_LINK}>
+              <Image src={GithubIcon} alt="Github Icon" />
+            </a>
           {/* </a> */}
           <Link href={LINKEDIN_LINK} key={t2} prefetch={false}>
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
