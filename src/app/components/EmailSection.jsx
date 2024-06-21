@@ -40,8 +40,8 @@ const EmailSection = () => {
     }
   };
 
-  const t1 = new Date().getTime();
-  const t2 = new Date().getTime() + 1;
+  // const t1 = new Date().getTime();
+  // const t2 = new Date().getTime() + 1;
 
   return (
     <section
@@ -68,9 +68,12 @@ const EmailSection = () => {
               <Image src={GithubIcon} alt="Github Icon" />
             </a>
           {/* </a> */}
-          <Link href={LINKEDIN_LINK} key={t2} prefetch={false}>
+          {/* <Link href={LINKEDIN_LINK} key={t2} prefetch={false}>
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
-          </Link>
+          </Link> */}
+          <a href={LINKEDIN_LINK}>
+            <Image src={LinkedinIcon} alt="Linkedin Icon" />
+          </a>
         </div>
         <p className="text-gray-300 max-w-3xl text-3xl my-8 mx-auto">
           If you would like to contact via e-mail, I&apos;m available at christopherluey@gmail.com
