@@ -41,24 +41,6 @@ const projectsData = [
     gitUrl: "https://github.com/chrisluey/portgrid",
     previewUrl: "/",
   },
-  // {
-  //   id: 5,
-  //   title: "React Firebase Template",
-  //   description: "Authentication and CRUD operations",
-  //   image: "/images/projects/5.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
-  // {
-  //   id: 6,
-  //   title: "Full-stack Roadmap",
-  //   description: "Project 5 description",
-  //   image: "/images/projects/6.png",
-  //   tag: ["All", "Web"],
-  //   gitUrl: "/",
-  //   previewUrl: "/",
-  // },
 ];
 
 const ProjectsSection = () => {
@@ -80,8 +62,11 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section id="projects" className="flex flex-col items-center justify-center h-screen lg:py-16">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <section 
+      id="projects" 
+      className="pt-16 md:pt-24 pb-16 md:pb-0 md:min-h-screen flex flex-col"
+    >
+      <h2 className="text-center text-4xl font-bold text-white mb-8">
         My Projects
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -101,26 +86,28 @@ const ProjectsSection = () => {
           isSelected={tag === "Mobile"}
         />
       </div>
-      <ul ref={ref} className="grid md:grid-cols-2 gap-8 md:gap-12 justify-center">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
+      <div className="flex-grow flex items-start justify-center">
+        <ul ref={ref} className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto px-4">
+          {filteredProjects.map((project, index) => (
+            <motion.li
+              key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.3, delay: index * 0.4 }}
+            >
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                imgUrl={project.image}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+              />
+            </motion.li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Languages",
     id: "languages",
     content: (
-      <ul className="list-disc pl-2 grid grid-cols-3">
+      <ul className="list-disc pl-2 grid grid-cols-2 sm:grid-cols-3">
         <li>Java</li>
         <li>JavaScript</li>
         <li>Python</li>
@@ -27,7 +27,7 @@ const TAB_DATA = [
     title: "Frameworks",
     id: "frameworks",
     content: (
-      <ul className="list-disc pl-2 grid grid-cols-2">
+      <ul className="list-disc pl-2 grid grid-cols-1 sm:grid-cols-2">
         <li>React.js</li>
         <li>Node.js</li>
         <li>JUnit</li>
@@ -42,7 +42,7 @@ const TAB_DATA = [
     title: "Developer Tools",
     id: "developer_tools",
     content: (
-      <ul className="list-disc pl-2 grid grid-cols-2">
+      <ul className="list-disc pl-2 grid grid-cols-1 sm:grid-cols-2">
         <li>Git</li>
         <li>Google Cloud Platform</li>
         <li>VS Code</li>
@@ -72,16 +72,6 @@ const TAB_DATA = [
       </ul>
     ),
   },
-  // {
-  //   title: "Certifications",
-  //   id: "certifications",
-  //   content: (
-  //     <ul className="list-disc pl-2">
-  //       <li>AWS Cloud Practitioner</li>
-  //       <li>Google Professional Cloud Developer</li>
-  //     </ul>
-  //   ),
-  // },
 ];
 
 const AboutSection = () => {
@@ -95,10 +85,21 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white flex flex-col items-center justify-center min-h-screen lg:py-16" id="about">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image className="rounded-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto sm:h-64 md:h-72 lg:h-80 xl:h-96 object-contain" src="/images/stock-software-dev.png" width={500} height={500} alt=""/>
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+    <section 
+      className="text-white pb-16 md:pb-0 pt-8 md:pt-0 md:min-h-screen flex flex-col justify-center" 
+      id="about"
+    >
+      <div className="md:grid md:grid-cols-2 gap-8 items-center px-4 xl:gap-16 xl:px-16">
+        <div className="flex justify-center mb-8 md:mb-0">
+          <Image 
+            className="rounded-md w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl h-auto object-contain" 
+            src="/images/stock-software-dev.png" 
+            width={500} 
+            height={500} 
+            alt="Profile Image"
+          />
+        </div>
+        <div className="text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
             Welcome! I&apos;m Christopher Luey, a software engineer with a passion for creating innovative solutions.
@@ -106,49 +107,37 @@ const AboutSection = () => {
             I&apos;m driven by a curiosity to explore new technologies and a commitment to continuous learning.
             Feel free to explore my projects and connect with me if you&apos;d like to collaborate or learn more about my work.
           </p>
-          <div className="flex flex-row justify-start mt-8">
+          <div className="flex flex-row flex-wrap justify-start mt-8 gap-2">
             <TabButton
               selectTab={() => handleTabChange("languages")}
               active={tab === "languages"}
             >
-              {" "}
-              Languages{" "}
+              Languages
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("frameworks")}
               active={tab === "frameworks"}
             >
-              {" "}
-              Frameworks{" "}
+              Frameworks
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("developer_tools")}
               active={tab === "developer_tools"}
             >
-              {" "}
-              Dev Tools{" "}
+              Dev Tools
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("libraries")}
               active={tab === "libraries"}
             >
-              {" "}
-              Libraries{" "}
+              Libraries
             </TabButton>
-            {/* <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              {" "}
-              Certifications{" "}
-            </TabButton> */}
           </div>
           <div className="mt-8">
             {TAB_DATA.find((t) => t.id === tab).content}
@@ -156,7 +145,6 @@ const AboutSection = () => {
         </div>
       </div>
     </section>
-
   );
 };
 
